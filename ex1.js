@@ -41,7 +41,7 @@ if (indice >= 0 && indice < 8) {
         console.log('Retirada negada: estoque insuficiente.');
     }
 } else {
-    console.log('Produto inválido.');
+    console.log('Produto inválido!');
 }
 
 console.log('Estoque atualizado:', estoque[indice])
