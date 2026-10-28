@@ -1,6 +1,6 @@
 const prompt = require('prompt-sync')();
 const titles = [
-          "1 - Harry Potter",    // botei numeração na lista pra fica mais intuitivo na hora de selecionar oque vai inverter pra 1 ou volta pra 0
+          "1 - Harry Potter",    
           "2 - Hobbit",
           "3 - Diário de um Banana",
           "4 - Lord of the Rings",
@@ -10,12 +10,12 @@ const titles = [
 let cemprestado = 0
 let status = [0,0,0,0,0,0]
 let posicao
-let i = 0 //passei o i pra cima pra funciona no while 
+let i = 0  
 let emprestado
 let disponivel = 6
 
 console.log("######## OPÇÕES ########")
-while ( i >= 0 && i < 6) {             // add o while pra fazer a repetição de 1 a 5 até sair com o 6
+while ( i >= 0 && i < 6) {             
     console.log("1 - Listar livros e situações")
     console.log("2 - Emprestar")
     console.log("3 - Devolver")
@@ -31,8 +31,8 @@ while ( i >= 0 && i < 6) {             // add o while pra fazer a repetição de
       break;
     case 2: 
       console.log(titles)
-      emprestado = Number(prompt("Qual você quer emprestado: "))   // alterei o IF pra uma linha só, pra ele alterar o array 
-      emprestado -= 1  // botei pra fazer - 1 pra cair no array certo pq comecei a lista de livro no 1 e o 1 no array é a segunda opção 
+      emprestado = Number(prompt("Qual você quer emprestado: "))   
+      emprestado -= 1 
       if (emprestado < 6 && status[emprestado] == 0) {
       status[emprestado] = 1;
       cemprestado +=1 
@@ -40,7 +40,7 @@ while ( i >= 0 && i < 6) {             // add o while pra fazer a repetição de
       }
       console.log(status);
       break;
-// Apartir daqui é novo
+
     case 3: 
       console.log(titles)
       emprestado = Number(prompt("Qual você quer devolver: "))   
