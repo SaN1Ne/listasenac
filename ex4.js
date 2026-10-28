@@ -23,4 +23,4 @@ for(i=0;i<7;i++) {
 console.log(`Sessões com todos os ingressos vendidos: ${msessao}`)
 console.log(`O total de vendas do dia foi de R$ ${totalvendas.toFixed(2)}`)
 let pos = total.indexOf(maior) + 1
-console.log(`a sessâo ${pos} teve a maior venda!!`)
+console.log(`a sessâo ${pos} teve a maior venda!`)
